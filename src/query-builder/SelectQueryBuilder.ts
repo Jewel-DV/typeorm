@@ -4238,7 +4238,7 @@ export class SelectQueryBuilder<Entity extends ObjectLiteral>
         } else {
             const andConditions: string[] = []
             for (const key in where) {
-                if (where[key] === undefined || where[key] === null) continue
+                // if (where[key] === undefined || where[key] === null) continue
 
                 const propertyPath = embedPrefix ? embedPrefix + "." + key : key
                 const column =
